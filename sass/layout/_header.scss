@@ -1,0 +1,124 @@
+// .page-header {
+//   align-content: center;
+//   border: 1px solid #ececec;
+// }
+
+// .page-header-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+// .page-nav {
+//   display: flex;
+// }
+
+// .logo {
+//   margin-top: 24px;
+//   margin-bottom: 25px;
+//   margin-right: 93px;
+//   font-family: var(--secondary-font);
+//   font-weight: 700;
+//   font-size: 26px;
+//   letter-spacing: 0.03em;
+//   line-height: 1.19;
+//   color: var(--primary-text-color-light-theme);
+// }
+
+// .logo:focus,
+// .word-web {
+//   color: var(--accent-color);
+// }
+
+// .menu {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .menu__item {
+//   position: relative;
+
+//   &:not(:last-child) {
+//     display: flex;
+//     margin-right: 40px;
+//   }
+// }
+
+// .menu__link {
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   font-family: var(--primary-font);
+//   font-style: normal;
+//   @include font;
+
+//   letter-spacing: 0.02em;
+//   color: var(--primary-text-color-light-theme);
+//   display: block;
+//   transition: var(--transition);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .contacts {
+//   display: flex;
+//   justify-content: flex-end;
+//   gap: 30px;
+// }
+
+// .icon-envelope {
+//   display: flex;
+//   align-items: center;
+//   margin-left: auto;
+//   margin-right: 10px;
+//   fill: currentColor;
+//   max-width: 16px;
+//   max-height: 12px;
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .icon-smartphone {
+//   fill: currentColor;
+//   margin-left: auto;
+//   margin-right: 10px;
+//   display: flex;
+//   align-items: center;
+//   max-width: 10px;
+//   max-height: 16px;
+// }
+
+// .contact-mail,
+// .contact-number {
+//   @include flex-center;
+//   padding: 32px 0;
+//   @include font;
+//   letter-spacing: 0.02em;
+//   color: var(--secondary-text-color-light-theme);
+//   transition: var(--transition);
+//   margin-left: auto;
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// .menu__link.menu__link_current {
+//   color: var(--accent-color);
+
+//   &::after {
+//     position: absolute;
+//     bottom: -1px;
+//     content: "";
+//     display: block;
+//     width: 100%;
+//     height: 4px;
+//     border-radius: 2px;
+//     background-color: var(--accent-color);
+//   }
+// }

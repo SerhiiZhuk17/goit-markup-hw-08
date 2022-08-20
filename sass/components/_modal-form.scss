@@ -1,0 +1,202 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 528px;
+    min-height: 581px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-form-field {
+    color: var(--primary-text-color-light-theme);
+}
+
+/* .modal-form-field:not(:last-child) {
+    margin-bottom: 20px;
+} */
+
+.modal-form-input-desc {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: var(--secondary-font-weight);
+    color: var(--secondary-text-color-light-theme);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+
+.modal-form-imput-wrapper {
+    display: block;
+    position: relative;
+}
+
+.contact-form-input {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: var(--primary-text-color-light-theme);
+  transition: border-color var(--transition);
+  
+  &:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  
+   & + .modal-form-imput-icon {
+   fill: var(--accent-color);
+    }
+  }
+}
+
+.contact-form-input-dark {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: #2F303A;
+    color: var(--primary-text-color-dark-theme);
+    transition: var(--transition);
+}
+
+.modal-form-imput-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translate(0, -50%);
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    transition: fill var(--transition);
+}
+
+.modal-form-message {
+    width: 100%;
+    height: 120px;
+    padding: 10px 15px;
+    resize: none;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    color: rgba(117, 117, 117, 0.5);
+    transition: border-color var(--transition);
+    
+    &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    }
+}
+
+.contact-form-checkbox {
+    @include flex-center;
+    padding: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+    font-weight: var(--secondary-font-weight);
+    font-size: var(--primary-font-size);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-light-theme);
+}
+
+.contact-form-check-desc {
+  @include flex-center;
+  &::before {
+  margin-right: 7px;
+  border: 2px solid #303030;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border-radius: 2px;
+  content: "";
+    }
+}
+
+.modal-form-check:checked+.contact-form-check-desc::before {
+    background-color: var(--accent-color);
+    background-image: url(../images/svg-images/icon\ check.svg);
+    border: none;
+}
+
+.modal-form-check:focus+.contact-form-check-desc::before {
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.link-agreement {
+    display: flex;
+    color: var(--accent-color);
+}
+
+.contact-form-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.contact-form-btn-subm {
+    min-width: 200px;
+    padding: 10px 32px;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
+}
+
+.contact-form-footer {
+    display: flex;
+    flex-direction: column;
+    min-width: 570px;
+}
+
+.contact-form-footer-items {
+    display: flex;
+}
+
+.contact-form-btn {
+    @include flex-center;
+    background-color: var(--accent-color);
+    font-weight: var(--primary-font-weight);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color-dark-theme);
+    cursor: pointer;
+    border-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+    min-width: 200px;
+    padding: 10px 28px;
+    transition: var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
+}
+
+.submit-icon {
+    margin-left: 10px;
+} 

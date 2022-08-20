@@ -1,0 +1,72 @@
+.page-footer {
+  background: #2f303a;
+  padding: 60px 0px;
+}
+
+.footer-contact-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  color: var(--primary-text-color-dark-theme);
+}
+
+.footer-adress {
+  display: flex;
+  flex-direction: column;
+  font: var(--primary-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color-dark-theme);
+}
+
+.footer-adress-map {
+  font: var(--primary-font);
+  color: var(--primary-text-color-dark-theme);
+}
+
+.footer-adress-list {
+  display: inline-block;
+  flex-direction: column;
+}
+
+.footer-contact-mail,
+.footer-contact-number {
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.join-title {
+  display: flex;
+  @include font($fw: 700);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.join-social-style {
+  fill: rgba(255, 255, 255, 0.1);
+}

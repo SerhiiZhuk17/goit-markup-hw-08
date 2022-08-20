@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <!--Header of site-->
+    <header class="page-header"> 
+        <div class="container page-header-container">
+            <nav class="page-nav">
+                <a class="logo link" href="./index.html"> <span class="word-web">Web</span>Studio</a>
+                <ul class="menu list">
+                    <li class="menu__item"> <a class="link menu__link" href="./index.html">Студія</a> </li>
+                    <li class="menu__item"> <a class="link menu__link menu__link_current" href="./portfolio.html">Портфоліо</a> </li>
+                    <li class="menu__item"> <a class="link menu__link" href="./index.html">Контакти</a> </li>
+                </ul>
+            </nav>
+            <ul class="contacts list">
+                <li class="contacts__list">
+                    <a class="link contact-mail" href="mailto:info@devstudio.com">
+                        <svg class="icon-envelope">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg> info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts__list">
+                    <a class="link contact-number" href="tel:+380961111111">
+                        <svg class="icon-smartphone">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg> +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--Main of the site-->
+    <!-- <main class="page-main-portfolio"> 
+        <section class="main-portfolio-filters">
+            <div class="container">
+            <h1 class="visually-hidden">Портфоліо</h1>
+            <ul class="main-button-list list">
+                <li class="button-list"><button class="main-filt-button" type="button">Всі</button></li>
+                <li class="button-list"><button class="main-filt-button" type="button">Веб-сайти</button></li>
+                <li class="button-list"><button class="main-filt-button" type="button">Додатки</button></li>
+                <li class="button-list"><button class="main-filt-button" type="button">Дизайн</button></li>
+                <li class="button-list"><button class="main-filt-button" type="button">Маркетинг</button></li>
+            </ul>
+            <ul class="list portfolio-list ">
+                <li class="portf-items">
+                    <a href="" class="portf-items-link link">
+                        <div class="portf-items-link-wrapper">
+                            <img src="./images/portfolio/leptop1.jpg" alt="Технокряк" width="370" height="295">
+                            <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                            исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="portf-items-styles">
+                            <h2 class="portf-items-name">Технокряк</h2>
+                            <p class="portf-items-description">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="portf-items">
+                    <a href="" class="portf-items-link link">
+                        <div class="portf-items-link-wrapper">
+                            <img src="./images/portfolio/basketball.jpg" alt="баскетбол" width="370" height="295">
+                            <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                        <div class="portf-items-styles">
+                            <h2 class="portf-items-name">Постер <span lang="en">New Orlean vs Golden Star</span> </h2>
+                            <p class="portf-items-description">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="portf-items">
+                    <a href="" class="portf-items-link link">
+                        <div class="portf-items-link-wrapper">
+                            <img src="./images/portfolio/imgseafood.jpg" alt="сеафуд" width="370" height="295">
+                            <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
+                        </div>                 
+                        <div class="portf-items-styles"> 
+                                <h2 class="portf-items-name">Ресторан <span lang="en">Seafood</span></h2>
+                                <p class="portf-items-description">Додаток</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="portf-items">
+                    <a href="" class="portf-items-link link">
+                    <img src="./images/portfolio/imgheadpphones.jpg" alt="проект прайм" width="370" height="295">
+                        <div class="portf-items-styles"> 
+                            <h2 class="portf-items-name">Проект  <span lang="en">Prime</span></h2>
+                            <p class="portf-items-description">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="portf-items">
+                    <a href="" class="portf-items-link link">
+                    <img src="./images/portfolio/imgblocks.jpg" alt="коробки" width="370" height="295">
+                        <div class="portf-items-styles"> 
+                            <h2 class="portf-items-name">Проект <span lang="en">Boxes</span></h2>
+                            <p class="portf-items-description">Додаток</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="portf-items">
+                    <a href="" class="portf-items-link link">
+                    <img src="./images/portfolio/imgscrean.jpg" alt="монітор" width="370" height="295">
+                        <div class="portf-items-styles"> 
+                            <h2 class="portf-items-name" lang="en">Inspiration has no Borders</h2>
+                            <p class="portf-items-description">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="portf-items">
+                    <a href="" class="portf-items-link link">
+                    <img src="./images/portfolio/imgbook.jpg" alt="книжка" width="370" height="295">
+                        <div class="portf-items-styles"> 
+                            <h2 class="portf-items-name">Издание <span lang="en" >Limited Edition</span> </h2>
+                            <p class="portf-items-description">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="portf-items">
+                    <a href="" class="portf-items-link link">
+                    <img src="./images/portfolio/imglabel.jpg" alt="лейба" width="370" height="295">
+                        <div class="portf-items-styles">  
+                            <h2 class="portf-items-name">Проект <span lang="en">LAB</span> </h2>
+                            <p class="portf-items-description">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="portf-items">
+                    <a href="" class="portf-items-link link">
+                    <img src="./images/portfolio/imglaptop2.jpg" alt="ноутбук2" width="370" height="295">
+                        <div class="portf-items-styles"> 
+                            <h2 class="portf-items-name" lang="en">Growing Business</h2>
+                            <p class="portf-items-description">Додаток</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </section>
+    </main> -->
+    <!--Footer-->
+    <!-- <footer class="page-footer">
+        <div class="container footer-contact-list">
+            <address class="footer-adress">
+                <a class="footer-logo link" href="./index.html"><span class="word-web">Web</span>Studio</a>
+                <ul class="list link footer-adress-list">
+                    <li class="footer-adress-map">г. Киев, пр-т Леси Украинки, 26</li>
+                    <li><a class="link footer-contact-mail" href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a class="link footer-contact-number" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+            <div class="join">
+                <h3 class="join-title">Приєднуйтеся</h3>
+                <ul class="social-list list">
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link social-list-link-dark">
+                            <svg class="social-list-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link social-list-link-dark">
+                            <svg class="social-list-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link social-list-link-dark">
+                            <svg class="social-list-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a href="" class="social-list-link social-list-link-dark">
+                            <svg class="social-list-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form class="contact-form-footer join">
+                <p class="join-title">Підпишіться на розсилку</p>
+                <span class="contact-form-footer-items">
+                    <input type="email" class="contact-form-input-dark" placeholder="E-mail" name="user_email" required />
+                    <button type="submit" class="contact-form-btn">Підписатися
+                        <svg class="submit-icon" width="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-icon-sendfooter"></use>
+                        </svg>
+                    </button>
+                </span>
+            </form>
+        </div>
+    </footer> -->
+</body>
+</html>

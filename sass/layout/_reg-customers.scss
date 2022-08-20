@@ -1,0 +1,32 @@
+.customers-title {
+    margin-bottom: 50px;
+}
+
+.main-customers {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.customers-list {}
+
+.customers-box {
+    @include flex-center;
+    min-width: 170px;
+    min-height: 92px;
+    margin: 0;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    transition: var(--transition);
+    
+    &.customers-box:hover,
+    &.customers-box:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    }
+}
+
+.customers-svg {
+    align-items: center;
+}

@@ -27,17 +27,18 @@
 
 .mobile-menu__close-btn {
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 15px;
     background-color: transparent;
     border: none;
     padding: 0;
     line-height: 0;
-}
+    }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
     }
+    
 }

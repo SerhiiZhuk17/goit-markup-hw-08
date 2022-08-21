@@ -396,13 +396,14 @@ body {
 @media screen and (max-width: 768px) {
   .mobile-menu {
     position: fixed;
-    width: 100%;
+    min-height: 480px;
+    width: 100vw;
     height: 100%;
-    max-height: 796px;
+    height: 100vh;
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: bisque;
+    background-color: white;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -413,18 +414,87 @@ body {
     visibility: visible;
     pointer-events: auto;
   }
+  .mobile-menu-open__icon:hover, .mobile-menu-open__icon:focus {
+    fill: var(--accent-color);
+    transition: var(--transition);
+  }
   .mobile-menu__container {
     position: relative;
-    padding: 48px 25px 48px;
+    padding: 48px 40px 48px;
   }
   .mobile-menu__close-btn {
     position: absolute;
+    display: flex;
     top: 20px;
     right: 15px;
     background-color: transparent;
     border: none;
     padding: 0;
     line-height: 0;
+  }
+  .mobile-menu__close-icon {
+    display: flex;
+  }
+  .mobile-menu__close-icon:hover, .mobile-menu__close-icon:focus {
+    fill: var(--accent-color);
+    transition: var(--transition);
+  }
+  .mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .menu-mobile-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    color: var(--primary-text-color-light-theme);
+  }
+  .menu-mobile-link:hover,
+.menu-mobile-link:focus {
+    color: var(--accent-color);
+    transition: var(--transition);
+  }
+  .contacts-mob {
+    display: flex;
+    flex-direction: column;
+  }
+  .soc-mob {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 64px;
+  }
+  .soc-mob-item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2222222222;
+    color: var(--accent-color);
+  }
+  .contact-number-mob {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.1764705882;
+    color: var(--accent-color);
+    margin-bottom: 32px;
+  }
+  .contacts__list-mail-mob {
+    margin-top: 32px;
+  }
+  .contacts__list-mail-mob .contact-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    color: #757575;
+  }
+  .soc-mob-item-border {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -513,7 +583,7 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-  .contacts.responsive {
+  .contacts {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -579,7 +649,9 @@ body {
   }
   .contacts {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
+    flex-direction: row-reverse;
     gap: 30px;
   }
   .icon-envelope {
@@ -623,15 +695,66 @@ body {
     color: var(--accent-color);
   }
 }
-.hero {
-  padding: 200px 0;
-  margin: 0 auto;
-  max-width: 1600px;
-  text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main.jpg);
-  background-color: #C4C4C4;
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 118px 0;
+    margin: 0 auto;
+    max-width: 768px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-main-mobile.jpg);
+    background-color: #C4C4C4;
+    background-size: cover;
+  }
+  .main-title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6153846154;
+  }
+  .modal {
+    height: 609px;
+    width: 450px;
+  }
+  .contact-form-check-desc {
+    font-size: 12px;
+  }
+  .link-agreement {
+    font-size: 12px;
+  }
 }
-
+@media screen and (min-width: 768px), (max-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+    margin: 0 auto;
+    max-width: 1600px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main.jpg);
+    background-color: #C4C4C4;
+  }
+  .modal {
+    height: 609px;
+    width: 450px;
+  }
+  .contact-form-check-desc {
+    font-size: 12px;
+  }
+  .link-agreement {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 581px;
+    width: 528px;
+  }
+  .contact-form-check-desc {
+    font-size: 14px;
+  }
+  .link-agreement {
+    font-size: 14px;
+  }
+}
 .main-features-list {
   display: flex;
   justify-content: space-between;

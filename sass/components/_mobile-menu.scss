@@ -1,13 +1,14 @@
 @media screen and (max-width: 768px) {
     .mobile-menu {
     position: fixed;
-    width: 100%;
+    min-height: 480px;
+    width: 100vw;
     height: 100%;
-    max-height: 796px;
+    height: 100vh;
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: bisque;
+    background-color:white;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -20,21 +21,113 @@
     pointer-events: auto;
 }
 
+.mobile-menu-open__icon {
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+            transition: var(--transition);
+        }
+}
+
 .mobile-menu__container {
     position: relative;
-    padding: 48px 25px 48px;
+    padding: 48px 40px 48px;
 }
 
 .mobile-menu__close-btn {
     position: absolute;
+    display: flex;
     top: 20px;
     right: 15px;
     background-color: transparent;
     border: none;
     padding: 0;
     line-height: 0;
+}
+
+.mobile-menu__close-icon {
+    display: flex;
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        transition: var(--transition);
     }
 }
+
+.mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.menu-mobile-item {
+
+}
+
+.menu-mobile-link {
+    @include font(500, 40px, 47px);
+    color: var(--primary-text-color-light-theme);
+}
+
+.menu-mobile-link:hover,
+.menu-mobile-link:focus {
+    color: var(--accent-color);
+    transition: var(--transition);
+    }
+
+.contacts-mob-list{
+
+
+}
+
+.contacts-mob {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__list {
+
+
+}
+.soc-mob {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 64px;
+}
+
+.soc-mob-item {
+    @include font(500, 18px, 22px);
+    color: var(--accent-color);
+}
+
+.contact-number-mob {
+    @include font(500, 34px, 40px);
+    color: var(--accent-color);
+    margin-bottom: 32px;
+}
+.contacts__list-mail-mob {
+    margin-top: 32px;
+}
+.contacts__list-mail-mob .contact-mail {
+    @include font(500, 24px, 28px);
+    color:#757575;
+}
+.soc-mob-item-border {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+}
+
+}
+
+                                
+
 
 @media screen and (min-width: 768px) {
     .mobile-menu {

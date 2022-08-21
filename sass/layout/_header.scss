@@ -7,6 +7,8 @@
     .contacts {
     display: none;
     }
+
+    
 }
 .page-header-container {
     display: flex;
@@ -22,24 +24,6 @@
     padding: 0;
     line-height: 0;
 }
-
-
-
-
-// .page-header {
-//   align-content: center;
-//   border: 1px solid #ececec;
-// }
-
-// .page-header-container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// }
-
-// .page-nav {
-//   display: flex;
-// }
 
 .logo {
   margin-top: 24px;
@@ -57,6 +41,23 @@
 .word-web {
   color: var(--accent-color);
 }
+
+@media screen and (min-width: 768px)
+
+// .page-header {
+//   align-content: center;
+//   border: 1px solid #ececec;
+// }
+
+// .page-header-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+// .page-nav {
+//   display: flex;
+// }
 
 // .menu {
 //   display: flex;

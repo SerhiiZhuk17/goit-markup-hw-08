@@ -432,6 +432,23 @@ body {
     display: none;
   }
 }
+.logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-right: 88px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  color: var(--primary-text-color-light-theme);
+}
+
+.logo:focus,
+.word-web {
+  color: var(--accent-color);
+}
+
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
@@ -453,23 +470,6 @@ body {
     padding-bottom: 22px;
   }
 }
-.logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
-  margin-right: 88px;
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  line-height: 1.19;
-  color: var(--primary-text-color-light-theme);
-}
-
-.logo:focus,
-.word-web {
-  color: var(--accent-color);
-}
-
 @media screen and (min-width: 768px) {
   .mobile-menu-open {
     display: none;

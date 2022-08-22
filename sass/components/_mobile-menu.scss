@@ -120,10 +120,6 @@
         
 }
 
-.soc-mob-item:not(:last-child) {
-
-}
-
 .contact-number-mob {
     @include font(500, 34px, 40px);
     color: var(--accent-color);

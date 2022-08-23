@@ -81,13 +81,16 @@
   fill: rgba(255, 255, 255, 0.1);
 }
 .contact-form-input-dark {
-  width: 450px;
+  width: 100%;
 }
 .contact-form-btn {
-  display: flex;
+  display: bloc;
   max-width: 200px;
   justify-content: center;
   margin: 20px 0px 60px;
+}
+.contact-form-footer {
+  display: flex;
 }
 }
 

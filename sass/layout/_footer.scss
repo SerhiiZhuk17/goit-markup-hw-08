@@ -72,7 +72,7 @@
   @include font($fw: 700);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin: 60px 0px 20px;
+  margin: 50px 0px 20px;
   color: #ffffff;
   justify-content: center;
 }
@@ -81,7 +81,7 @@
   fill: rgba(255, 255, 255, 0.1);
 }
 .contact-form-input-dark {
-  width: 100%;
+  width: 450px;
 }
 .contact-form-btn {
   display: flex;

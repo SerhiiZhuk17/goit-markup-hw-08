@@ -1,3 +1,20 @@
+@media screen and (max-width: 768px) {
+    .customers-box {
+        min-width: 210px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1200px) {
+    .customers-box {
+        min-width: 226px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .customers-box {
+        min-width: 170px;
+    }
+}
 .customers-title {
     margin-bottom: 50px;
 }
@@ -6,13 +23,14 @@
     gap: 30px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .customers-list {}
 
 .customers-box {
     @include flex-center;
-    min-width: 170px;
+    // min-width: 170px;
     min-height: 92px;
     margin: 0;
     border: 1px solid #AFB1B8;

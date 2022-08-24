@@ -1497,7 +1497,7 @@ body {
     display: flex;
     max-width: 200px;
     justify-content: center;
-    margin: 20px 0px 60px;
+    margin: 20px 0px 0px;
   }
   .contact-form-footer {
     display: flex;

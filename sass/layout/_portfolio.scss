@@ -6,7 +6,6 @@
 
 .portf-items {
   display: flex;
-  // margin-bottom: 30px;
   max-width: 370px;
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
@@ -79,3 +78,11 @@
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-light-theme);
 }
+
+// @media screen and (min-width: 768px) {
+//   .portf-items {
+//     display: block;
+//     width: calc(100% -2 *15px)/2;
+//     margin: 15px;
+//   }
+// }
